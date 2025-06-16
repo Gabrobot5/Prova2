@@ -1,0 +1,48 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* header */
+#cabecalho{
+    background-color: blue;
+}
+
+#cabecalho img{
+    width: 30px;
+    height: 30px;
+}
+
+#novaConta{
+    color: white;
+    font-size: small;
+}
+
+/* main */
+
+main {
+    margin-top: 0.45rem;
+    margin-bottom: 1rem;
+}
+
+.carousel-item img {
+    height: 500px; /* Ajuste este valor conforme necessário */
+    object-fit: cover; /* Mantém a proporção e cobre toda a área */
+    width: 100%;
+}
+
+/* login */
+
+body.login-page {
+    background-color: #2e2e2e;
+  }
+
+#entrar {
+    gap: 1rem; /* Espaço entre os aside */
+  }
+  
+  #imageLogin img {
+    max-width: 600px; /* ou o tamanho que desejar */
+  height: auto; /* mantém a proporção */
+  width: 100%; /* torna responsivo */
+  }
