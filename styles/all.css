@@ -3,7 +3,7 @@
   padding: 0%;
 }
 
-/* Configurações para o footer fixo */
+/* footer fixo */
 html,
 body {
   height: 100%;
@@ -252,7 +252,7 @@ h3.recomendacoes {
   margin-left: 5px;
 }
 
-/* pagamentos e segunrança abaixo do ultimo carrossel */
+/* pagamentos e segunrança */
 
 .payment-icon {
   transition: transform 0.3s ease;
