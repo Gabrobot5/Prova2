@@ -1,53 +1,74 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/* Configurações para o footer fixo */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  margin-top: 0.45rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  width: 100%;
+  margin-top: auto;
 }
 
 /* header */
-#cabecalho{
-    background-color: blue;
+
+#cabecalho img {
+  width: 30px;
+  height: 30px;
 }
 
-#cabecalho img{
-    width: 30px;
-    height: 30px;
-}
-
-#novaConta{
-    color: white;
-    font-size: small;
-}
-
-/* main */
-
-main {
-    margin-top: 0.45rem;
-    margin-bottom: 1rem;
-}
-
-.carousel-item img {
-    height: 500px; /* Ajuste este valor conforme necessário */
-    object-fit: cover; /* Mantém a proporção e cobre toda a área */
-    width: 100%;
+#novaConta {
+  color: white;
+  font-size: small;
 }
 
 /* login */
-
 body.login-page {
-    background-color: #2e2e2e;
-  }
+  background-color: #2e2e2e;
+}
+
+body.login-page h2 {
+  color: white;
+}
 
 #entrar {
-    gap: 1rem; /* Espaço entre os aside */
-  }
-  
-  #imageLogin img {
-    max-width: 600px; /* ou o tamanho que desejar */
-  height: auto; /* mantém a proporção */
-  width: 100%; /* torna responsivo */
-  }
+  gap: 1rem;
+}
 
- /* Estilos para o carrossel principal */
+#imageLogin img {
+  max-width: 600px;
+  height: auto;
+  width: 100%;
+}
+
+/* cadastro */
+#imageCadastro img {
+  max-width: 700px;
+  height: auto;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* carrossel principal */
 #mainCarousel {
   margin-top: 20px;
 }
@@ -57,7 +78,7 @@ body.login-page {
   object-fit: cover;
 }
 
-/* Estilos para o carrossel de promoções */
+/* carrossel de promoções */
 .promo-carousel {
   background-color: #f8f9fa;
   border-radius: 10px;
@@ -76,27 +97,26 @@ body.login-page {
   padding: 15px;
   background: white;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  height: 100%; /* Garante altura uniforme */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .promo-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Container da imagem para manter proporção */
 .promo-img-container {
-  height: 200px; /* Altura fixa */
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
-  background-color: #f0f0f0; /* Cor de fundo para áreas vazias */
+  background-color: #f0f0f0;
   border-radius: 5px;
-  overflow: hidden; /* Previne vazamento */
+  overflow: hidden;
 }
 
 .promo-img {
@@ -104,7 +124,7 @@ body.login-page {
   max-height: 100%;
   width: auto;
   height: auto;
-  object-fit: contain; /* Mantém proporção sem cortes */
+  object-fit: contain;
 }
 
 .promo-price {
@@ -118,7 +138,7 @@ body.login-page {
   font-weight: 500;
   color: #333;
   font-size: 0.9rem;
-  margin-top: auto; /* Empurra para baixo */
+  margin-top: auto;
 }
 
 /* Controles do carrossel */
@@ -126,19 +146,135 @@ body.login-page {
 .promo-carousel .carousel-control-next {
   width: 40px;
   height: 40px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
   opacity: 0.8;
 }
 
+/* catalogo */
+
+/* destaque do Tekken */
+.destaque-tekken {
+  background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.destaque-tekken img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.destaque-tekken img:hover {
+  transform: scale(1.02);
+}
+
+.tekken-info {
+  padding-left: 30px;
+}
+
+.btn-comprar {
+  background-color: #e53935;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  transition: all 0.3s;
+}
+
+.btn-comprar:hover {
+  background-color: #c62828;
+  transform: translateY(-2px);
+}
+
+.tekken-tags span {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-size: 0.8rem;
+}
+
+h3.recomendacoes {
+  margin: 40px 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e53935;
+}
+
+
+/* aside */
+.categories-aside {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category-title {
+  font-size: 1.2rem;
+  border-bottom: 1px solid #495057;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.category-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.category-item {
+  margin-bottom: 10px;
+}
+
+.category-link {
+  color: #adb5bd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.category-link:hover {
+  color: white;
+}
+
+.platform-badge {
+  background-color: #495057;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  margin-left: 5px;
+}
+
+/* pagamentos e segunrança abaixo do ultimo carrossel */
+
+.payment-icon {
+  transition: transform 0.3s ease;
+}
+.payment-icon:hover {
+  transform: scale(1.1);
+}
+.security-icon {
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+.security-icon:hover {
+  transform: scale(1.05);
+}
+
+
 /* Responsividade */
 @media (max-width: 768px) {
   .promo-img-container {
     height: 150px;
   }
-  
+
   .promo-carousel .carousel-control-prev,
   .promo-carousel .carousel-control-next {
     height: 30px;
