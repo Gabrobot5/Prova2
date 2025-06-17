@@ -46,3 +46,108 @@ body.login-page {
   height: auto; /* mantém a proporção */
   width: 100%; /* torna responsivo */
   }
+
+ /* Estilos para o carrossel principal */
+#mainCarousel {
+  margin-top: 20px;
+}
+
+#mainCarousel .carousel-item img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+/* Estilos para o carrossel de promoções */
+.promo-carousel {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.promo-carousel .carousel-inner {
+  padding: 10px 0;
+}
+
+.promo-item {
+  text-align: center;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  height: 100%; /* Garante altura uniforme */
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Container da imagem para manter proporção */
+.promo-img-container {
+  height: 200px; /* Altura fixa */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: #f0f0f0; /* Cor de fundo para áreas vazias */
+  border-radius: 5px;
+  overflow: hidden; /* Previne vazamento */
+}
+
+.promo-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain; /* Mantém proporção sem cortes */
+}
+
+.promo-price {
+  font-weight: bold;
+  color: #d32f2f;
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+.promo-title {
+  font-weight: 500;
+  color: #333;
+  font-size: 0.9rem;
+  margin-top: auto; /* Empurra para baixo */
+}
+
+/* Controles do carrossel */
+.promo-carousel .carousel-control-prev,
+.promo-carousel .carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .promo-img-container {
+    height: 150px;
+  }
+  
+  .promo-carousel .carousel-control-prev,
+  .promo-carousel .carousel-control-next {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .promo-img-container {
+    height: 120px;
+  }
+}
